@@ -1,0 +1,97 @@
+@import '../shared/colors.scss';
+@import '../shared/secondaryColors.scss';
+:host {
+  .not-selected {
+    background-color: rgba(132, 132, 132, .6);
+  }
+  .selected {
+    box-shadow: 0px 0px 31.15px 3.85px rgba(6, 27, 15, 0.42);
+    background-color: $new-color; // rgba(51, 60, 87,.9);
+    color: rgba(255, 255, 255, .99);
+  }
+  *{
+    font-weight: 500;
+    font-size: 100%;
+  }
+
+  .filter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 2%;
+
+  }
+  .sport,.metro{
+    display: flex;
+  }
+;
+  .sport{
+    padding-bottom: 15px;
+  }
+
+  select {
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 15%;
+  border-radius: 3px;
+  overflow: hidden;
+
+
+  }
+
+  select:focus {
+    outline: none;
+  }
+
+.time{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background-color: #757575;
+  justify-content: space-around;
+}
+
+
+
+
+.quantity{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+  .quantity p {
+  }
+  .quantity select{
+    height: 30px;
+    width: 40%;
+
+  }
+
+  .interval_from {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .interval_from input {
+    width: 40%;
+    height: 25%
+  }
+
+  .cost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    background-color: gray;
+  }
+  .cost input {
+    width: 40%;
+    height: 25%;
+  }
+
+
+
+  }

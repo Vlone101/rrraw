@@ -1,0 +1,131 @@
+@import '../shared/colors.scss';
+@import '../shared/secondaryColors.scss';
+@import './form.scss';
+:host {
+    .not-selected {
+        background-color: rgba(132, 132, 132,.6);
+    }
+    .selected {
+         box-shadow: 0px 0px 31.15px 3.85px rgba(6, 27, 15, 0.42);
+         background-color: $new-color; // rgba(51, 60, 87,.9);
+         color: rgba(255, 255, 255, .99);
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 65px;
+        font-weight: 200;
+    }
+
+
+    .header-auth {
+        margin-top: 100px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+    .card {
+        flex-basis: 100%;
+        height: 92%;
+        display: flex;
+        flex-flow: row nowrap;
+
+        .info-card {
+            color: #fff;
+            position: relative;
+            .text{
+                height: 100px;
+                margin-top: 45px;
+                width: 89%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 28px;
+            }
+            .effect {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background-color: #383838;
+                opacity: .6;
+            }
+            .header-auth {
+                position: relative;
+                z-index: 5;
+            }
+
+            .button-holder {
+                position: relative;
+                z-index: 5;
+                margin-top: 150px;
+                background-color: transparent;
+                flex-basis: 6%;
+                width: 60%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+
+
+                .button {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    flex-basis: 50%;
+                    border: none;
+                    outline: none;
+                    color: rgba(255, 255, 255, .7);
+                    transition: all ease .5s;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .button:hover {
+                    color: rgba(255, 255, 255, .99)
+                }
+
+
+
+            }
+
+            p {
+                position: relative;
+                z-index: 5;
+                padding: 0;
+                margin: 0;
+            }
+            flex-basis: 50%;
+            height: 100%;
+            background-size: cover;
+            background-image: url('img/log_photo.png');
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+    }
+    
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

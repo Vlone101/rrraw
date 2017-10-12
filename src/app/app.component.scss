@@ -1,0 +1,138 @@
+@import './shared/colors.scss';
+@import './shared/font.scss';
+@import './shared/secondaryColors.scss';
+@import './appComponentStyles/main.scss';
+
+:host {
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+    position: relative;
+    background-color: rgba(189, 189, 189, .4);
+    .carousel {
+        .coverer{
+            z-index: 2;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(56, 57, 58);
+            opacity: .56;
+            display: flex;
+
+        }
+        .title {
+            width: 1100px;
+            height: 500px;
+            position: absolute;
+            z-index: 3;
+            top: 26%;
+            left: 22%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .logo{
+                width: 500px;
+                height: 400px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h1{
+                padding: 0;
+                margin: 0;
+                font-size: 160px;
+                color: #ffffff;
+                font-weight: 200;
+            }
+            p{
+                color: #ffffff;
+                padding: 0;
+                margin: 0;
+                font-size: 50px;
+                font-weight: 100;
+            }
+        }
+
+        position: absolute;
+        top: 0; 
+        display: block;
+        width: 1920px;
+        height: 980px;
+        img{
+            width: 100%;
+            height: 1050px;
+        }
+    }
+
+    position: relative;
+    font-family: $my-font;
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+
+    overflow: hidden;
+    width: 100%;
+    height: 980px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    header {
+        a:hover{
+            cursor:pointer;
+            transform: scale(2);
+        }
+        .scaler{
+            transition: all ease-in .3s;
+        }
+        .scaler:hover{
+            transform: scale(1.35);
+        }
+        .logo{
+            width: 150px;
+            height: 80px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        opacity: .6;
+        height: 8%;
+        width: 100%;
+        background-color: $color-dark;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        .nav{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 22%;
+            margin-left: 4%;
+        }
+    }
+
+}

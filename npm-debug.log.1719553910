@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/bin/npm', 'run', 'server' ]
+2 info using npm@3.10.10
+3 info using node@v8.4.0
+4 verbose run-script [ 'preserver', 'server', 'postserver' ]
+5 info lifecycle app@0.0.0~preserver: app@0.0.0
+6 silly lifecycle app@0.0.0~preserver: no script for preserver, continuing
+7 info lifecycle app@0.0.0~server: app@0.0.0
+8 verbose lifecycle app@0.0.0~server: unsafe-perm in lifecycle true
+9 verbose lifecycle app@0.0.0~server: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/ed/wweaaas/node_modules/.bin:/usr/lib/node_modules/npm/bin/node-gyp-bin:/home/ed/wweaaas/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+10 verbose lifecycle app@0.0.0~server: CWD: /home/ed/wweaaas
+11 silly lifecycle app@0.0.0~server: Args: [ '-c', 'webpack-dev-server --inline --progress --port 8080' ]
+12 silly lifecycle app@0.0.0~server: Returned: code: null  signal: SIGTERM
+13 verbose stack Error: write EIO
+13 verbose stack     at _errnoException (util.js:1041:11)
+13 verbose stack     at WriteWrap.afterWrite [as oncomplete] (net.js:858:14)
+14 verbose cwd /home/ed/wweaaas
+15 error Linux 4.8.0-53-generic
+16 error argv "/usr/local/bin/node" "/usr/bin/npm" "run" "server"
+17 error node v8.4.0
+18 error npm  v3.10.10
+19 error code EIO
+20 error errno EIO
+21 error syscall write
+22 error write EIO
+23 error If you need help, you may report this error at:
+23 error     <https://github.com/npm/npm/issues>
+24 verbose exit [ 1, true ]

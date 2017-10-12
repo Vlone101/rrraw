@@ -1,0 +1,29 @@
+<header>
+    <div class="nav">
+        <div class="nav-item first"><div class="scaler"><a [routerLink]="''">Главная</a></div></div>
+        <div class="nav-item"><div class="scaler"><a [routerLink]="'Auth'">Регистрация</a></div></div>
+        <div class="nav-item"><div class="scaler"><a [routerLink]="'Field'">поля</a></div></div>
+        <div class="liner">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <router-outlet></router-outlet> 
+</main>
+<div class="carousel">
+    <div class="title">
+        <h1>RawSport</h1>
+        <p>Доступ к спорту в любой точке земного шара</p>
+    </div>
+    <div class="coverer"></div>
+    <ngx-siema [options]="options">
+        <ngx-siema-slide><img src="img/test.jpg" alt=""></ngx-siema-slide>
+        <ngx-siema-slide><img src="img/second.jpg" alt=""></ngx-siema-slide>
+        <ngx-siema-slide><img src="img/third.jpg" alt=""></ngx-siema-slide>
+        <ngx-siema-slide><img src="img/fourth.jpg" alt=""></ngx-siema-slide>
+        <ngx-siema-slide><img src="img/fifth.jpg" alt=""></ngx-siema-slide>
+        <ngx-siema-slide><img src="img/sixth.jpg" alt=""></ngx-siema-slide>
+    </ngx-siema>
+</div>
